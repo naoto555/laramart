@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light shadow-sm laravelmart-header-container">
     <a class="navbar-brand" href="{{ url('/') }}">
-        {{ config('app.name', 'Laravel') }}
+        <img src="{{asset('img/logo.png')}}">
     </a>
     <form class="form-inline">
         <div class="form-group">
