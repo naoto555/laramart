@@ -1,5 +1,32 @@
-/*22.9.8 追加*/
+/* 22.9.09追加 */
+.laravelmart-header-container {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
 
+.laravelmart-header-search-input {
+    border: solid 1px #e5e5e5;
+}
+
+.laravelmart-header-search-button {
+    background-color: #0fbe9f;
+}
+
+.laravelmart-header-search-icon {
+    color: #ffffff;
+}
+
+.laravelmart-header-fav-icon {
+    color: #191919;
+}
+
+.laravelmart-header-shoppingcart-icon {
+    color: #ffffff;
+}
+/* 22.9.09追加ここまで */
+
+
+/*22.9.8 追加*/
 @font-face {
     font-family: YuGo;
     src: local(YuGo-Medium),
