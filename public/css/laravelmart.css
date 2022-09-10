@@ -1,3 +1,15 @@
+/* 22.9.10追加 */
+.laravelmart-favorite-button {
+    border-radius: 2px;
+    border: solid 1px #0fbe9f;
+    background-color: #ffffff;
+}
+
+.text-favorite {
+    color: #0fbe9f;
+}
+/* 22.9.10追加 */
+
 /* 22.9.09追加 */
 .laravelmart-header-container {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
