@@ -12,7 +12,7 @@
                     </a>
                     <div class="row">
                         <div class="col-12">
-                            <p class="laravelmart-product-label mt-2">
+                            <p class="samuraimart-product-label mt-2">
                                 {{$product->name}}<br>
                                 <label>￥{{$product->price}}</label>
                             </p>
@@ -22,6 +22,7 @@
                 @endforeach
             </div>
         </div>
+        {{ $products->links() }}
     </div>
 </div>
 @endsection
