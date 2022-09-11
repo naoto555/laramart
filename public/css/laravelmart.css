@@ -1,3 +1,18 @@
+/* 22.9.11追加 */
+.laravelmart-sidebar-category-label {
+    width: 156px;
+    height: 20px;
+    font-family: YuGo;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #191919;
+}
+/* 22.9.11追加 */
+
 /* 22.9.10追加 */
 .laravelmart-favorite-button {
     border-radius: 2px;
