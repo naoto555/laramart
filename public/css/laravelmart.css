@@ -1,3 +1,15 @@
+/*
+.review-score-color {
+  color: #0fbe9f;
+}
+
+.review-score-color:focus {
+  color: #0fbe9f;
+}
+*/
+
+
+
 /* 22.9.12追加 */
 .laravelmart-favorite-add-cart {
     border-radius: 2px;
