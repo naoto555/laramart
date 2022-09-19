@@ -12,7 +12,7 @@ class Product extends Model
     
     public $sortable = [
         'price',
-        'update_at',
+        'updated_at',
     ];
     
     public function category()

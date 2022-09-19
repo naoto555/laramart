@@ -33,3 +33,10 @@ Route::resource('products', 'ProductController');
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/dashboard', 'DashboardController@index')->middleware('auth:admins');
+Route::group(['prefix' => 'dashboard', 'as' => 'dashboard.'], function () {
+    Route::get('login', 'Dashboard\Auth\LoginController@showLoginForm')->name('login');
+    Route::post('login', 'Dashboard\Auth\LoginController@login')->name('login');
+    Route::resource('categories', 'Dashboard\CategoryController')->middleware('auth:admins');
+});
