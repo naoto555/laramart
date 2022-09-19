@@ -47,7 +47,6 @@
             </div>
         </div>
         {{ $products->appends(request()->query())->links() }}
-        <a href="{{route('products.create')}}" class="btn btn-primary m-4">New Product</a>
     </div>
 </div>
 @endsection
