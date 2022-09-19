@@ -36,5 +36,8 @@ class UserController extends Controller
           }else {
             $user -> deleted_flag = true;
           }
+          
+          $user->update(); 
+          return redirect()->route('dashboard.users.index');
       }
 }
