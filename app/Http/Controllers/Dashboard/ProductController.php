@@ -87,6 +87,12 @@ class ProductController extends Controller
             $product->recommend_flag = false;
         }
         
+        if ($request->input('carriage') == 'on') {
+            $product->carriage_flag = true;
+        } else {
+            $product->carriage_flag = false;
+        }
+        
         $product->save();
 
         return redirect()->route('dashboard.products.index');
@@ -132,6 +138,12 @@ class ProductController extends Controller
             $product->recommend_flag = true;
         } else {
             $product->recommend_flag = false;
+        }
+        
+        if ($request->input('carriage') == 'on') {
+            $product->carriage_flag = true;
+        } else {
+            $product->carriage_flag = false;
         }
         $product->update();
 
