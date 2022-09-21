@@ -12,7 +12,11 @@
             @foreach ($recommend_products as $recommend_product)
             <div class="col-4">
                 <a href="/products/{{ $recommend_product->id }}">
-                    <img src="{{ asset('img/orange.png') }}" class="img-thumbnail">
+                    <!--@if ($recently_product->image !== "")-->
+                    <!--<img src="{{ asset('storage/products/'.$recently_product->image) }}" class="img-thumbnail">-->
+                    <!--@else-->
+                    <!--<img src="{{ asset('img/dummy.png')}}" class="img-thumbnail">-->
+                    <!--@endif-->
                 </a>
                 <div class="row">
                     <div class="col-12">
