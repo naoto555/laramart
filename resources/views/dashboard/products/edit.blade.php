@@ -16,7 +16,7 @@
 
     <hr>
 
-    <form method="POST" action="/dashboard/products/{{ $product->id }}" class="mb-5">
+    <form method="POST" action="/dashboard/products/{{ $product->id }}" class="mb-5" enctype="multipart/form-data">
         {{ csrf_field() }}
         <input type="hidden" name="_method" value="PUT">
         <div class="form-inline mt-4 mb-4 row">
@@ -39,7 +39,7 @@
                 @endforeach
             </select>
         </div>
-          <div class="form-inline mt-4 mb-4 row">
+        <div class="form-inline mt-4 mb-4 row">
             <label class="col-2 d-flex justify-content-start">画像</label>
             @if ($product->image !== null)
             <img src="{{ asset('storage/products/'.$product->image) }}" id="product-image-preview" class="img-fluid w-25">
@@ -51,7 +51,7 @@
                 <label for="product-image" class="btn laravelmart-submit-button">画像を選択</label>
                 <input type="file" name="image" id="product-image" onChange="handleImage(this.files)" style="display: none;">
             </div>
-         </div>        
+        </div>        
         <div class="form-inline mt-4 mb-4 row">
             <label for="product-price" class="col-2 d-flex justify-content-start">オススメ?</label>
             @if ($product->recommend_flag)
@@ -91,5 +91,5 @@
         console.log(image);
         reader.readAsDataURL(image[0]);
     }
- </script>
-@endsection 
+</script>
+@endsection

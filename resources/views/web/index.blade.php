@@ -8,15 +8,16 @@
     </div>
     <div class="col-9">
         <h1>おすすめ商品</h1>
+        
         <div class="row">
             @foreach ($recommend_products as $recommend_product)
             <div class="col-4">
                 <a href="/products/{{ $recommend_product->id }}">
-                    <!--@if ($recently_product->image !== "")-->
-                    <!--<img src="{{ asset('storage/products/'.$recently_product->image) }}" class="img-thumbnail">-->
-                    <!--@else-->
-                    <!--<img src="{{ asset('img/dummy.png')}}" class="img-thumbnail">-->
-                    <!--@endif-->
+                    @if ($recommend_product->image !== "")
+                    <img src="{{ asset('storage/products/'.$recommend_product->image) }}" class="img-thumbnail">
+                    @else
+                    <img src="{{ asset('img/dummy.png')}}" class="img-thumbnail">
+                    @endif
                 </a>
                 <div class="row">
                     <div class="col-12">
@@ -35,11 +36,15 @@
             @foreach ($recently_products as $recently_product)
             <div class="col-3">
                 <a href="/products/{{ $recently_product->id }}">
+                    @if ($recently_product->image !== "")
+                    <img src="{{ asset('storage/products/'.$recently_product->image) }}" class="img-thumbnail">
+                    @else
                     <img src="{{ asset('img/dummy.png')}}" class="img-thumbnail">
+                    @endif
                 </a>
                 <div class="row">
                     <div class="col-12">
-                        <p class="samuraimart-product-label mt-2">
+                        <p class="laravelmart-product-label mt-2">
                             {{ $recently_product->name }}<br>
                             <label>￥{{ $recently_product->price }}</label>
                         </p>

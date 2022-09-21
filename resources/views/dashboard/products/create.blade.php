@@ -16,7 +16,7 @@
 
     <hr>
 
-    <form method="POST" action="/dashboard/products" class="mb-5">
+    <form method="POST" action="/dashboard/products" class="mb-5" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="form-inline mt-4 mb-4 row">
             <label for="product-name" class="col-2 d-flex justify-content-start">商品名</label>
