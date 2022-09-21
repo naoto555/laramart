@@ -13,7 +13,7 @@
                 </div>
                 <input id="search-products" name="code" class="form-controll ml-2 w-50" placeholder="123456789" value="{{ $code }}" />
             </div>
-            <button type="submit" class="btn samuraimart-submit-button">検索</button>
+            <button type="submit" class="btn laravelmart-submit-button">検索</button>
         </form>
     </div>
 

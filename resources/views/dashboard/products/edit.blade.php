@@ -63,9 +63,9 @@
         <div class="form-inline mt-4 mb-4 row">
             <label for="product-carriage" class="col-2 d-flex justify-content-start">送料</label>
             @if ($product->carriage_flag)
-            <input type="checkbox" name="carriage" id="product-carriage" class="samuraimart-check-box" checked>
+            <input type="checkbox" name="carriage" id="product-carriage" class="laravelmart-check-box" checked>
             @else
-            <input type="checkbox" name="carriage" id="product-carriage" class="samuraimart-check-box">
+            <input type="checkbox" name="carriage" id="product-carriage" class="laravelmart-check-box">
             @endif
         </div>
         <div class="form-inline mt-4 mb-4 row">
