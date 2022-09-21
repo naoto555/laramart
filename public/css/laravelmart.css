@@ -1,3 +1,25 @@
+/* 22.9.21追加 */
+.laravelmart-button {
+    border-radius: 2px;
+    border: solid 1px #b2b2b2;
+    background-color: #ffffff;
+  }
+  
+  .flash-success-font {
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0dab8f;
+  }
+  
+  .flash-success-bg {
+    border-radius: 2px;
+    background-color: #ceeee8;
+  }
+/* 22.9.21追加 */
+
 /* 22.9.20追加 */
 .laravelmart-delete-submit-button {
     border-radius: 2px;
