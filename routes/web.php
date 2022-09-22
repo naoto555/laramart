@@ -57,3 +57,7 @@
       Route::resource('users', 'Dashboard\UserController');
       Route::post('logout', 'Dashboard\Auth\LoginController@logout')->name('logout');
   });
+  
+  if (env('APP_ENV') === 'production') {
+    URL::forceScheme('https');
+  }
